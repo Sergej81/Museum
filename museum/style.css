@@ -147,7 +147,15 @@ a{
     letter-spacing: 2px;
     color: #FFFFFF;
 }
-
+.gradient-bock{
+    position: absolute;
+    width: 1000px;
+    top: -75px;
+    height:750px;
+    left: 440px;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+    z-index: 2;
+}
 .slide{
     position: absolute;
     width: 100%;
@@ -155,7 +163,6 @@ a{
     left: 440px;
     top: -75px;
     display: none;
-    /* background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url(./assets/img/welcome/1.jpg) no-repeat; */
 }
 .slide.active{
     display: block;

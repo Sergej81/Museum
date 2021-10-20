@@ -58,4 +58,3 @@ squares.forEach ((item, indexSquare) => {
 
 next.addEventListener ('click',nextSlide);
 prev.addEventListener ('click',prevSlide);
-
