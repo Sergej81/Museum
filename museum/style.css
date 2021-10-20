@@ -97,7 +97,7 @@ a{
 .welcome-text {
     position: absolute;
     padding-top: 75px;
-    z-index: 2;
+    z-index: 3;
 }
 .title{
     font-family: Forum;
