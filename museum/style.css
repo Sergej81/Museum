@@ -192,7 +192,6 @@ a:hover{
     display: block;
 }
 
-
 .pagination-wraper {
     position: absolute;
     width: 600px;
@@ -304,15 +303,18 @@ a:hover{
 }
 .virtual-column .under-title::after{
     margin-bottom: 10px;
-    height: 2px;
+    height: 1px;
 }
 
 .virtual-image{
     margin-bottom: 25px;
 }
-
 .virtual-text-block{
     width: 300px;
+}
+.virtual-text-block:hover{
+    width: 100%;
+    transition: 0.5s;
 }
 .vitual-subtitle{
     margin-bottom: 10px;
