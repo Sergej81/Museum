@@ -348,9 +348,11 @@ a:hover{
 
 .explore-flexwraper{
     display: flex;
-    gap: 0px 60px;
+    gap: 0px 60px; 
 }
-
+.explore-description{
+    max-width: 660px;
+}
 .explore-description .title{
     margin-bottom: 25px;
 }
@@ -374,8 +376,34 @@ a:hover{
 .explore-description-text span{
     color: #CAAA7D;;
 }
-.exlpore-image{
-    padding-top: 15px;
+.exlpore-block{
+    border: solid 1px #a19797;
+    width: 720px;
+    height: 700px;
+}
+.position-wrapper{
+    position: relative; 
+}
+.view{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.image-befor{
+    z-index: 1;
+}
+.image-after{
+    z-index: 2;
+}
+.explore-slider {
+    position: absolute;
+    width: 39px;
+    height: 700px;
+    left: 421px;
+    background-image: url(./assets/svg/explore_lider.svg);
+    z-index: 3;
+    cursor: pointer;
 }
 .video-block-text{
     display: flex;
