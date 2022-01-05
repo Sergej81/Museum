@@ -394,16 +394,18 @@ a:hover{
     z-index: 1;
 }
 .image-after{
+    width: 440px;
+    overflow: hidden;
     z-index: 2;
 }
 .explore-slider {
-    position: absolute;
+    position: relative;
     width: 39px;
     height: 700px;
     left: 421px;
-    background-image: url(./assets/svg/explore_lider.svg);
+    background-image: url(./assets/svg/explore_slider.svg);
     z-index: 3;
-    cursor: pointer;
+    cursor: grab;
 }
 .video-block-text{
     display: flex;
