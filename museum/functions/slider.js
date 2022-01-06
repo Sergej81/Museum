@@ -1,7 +1,7 @@
 'use strict'
 const separ = document.getElementById ('separator');
-const befor = document.querySelectorAll ('.image-befor');
-const afterPic = document.getElementById ('after');
+const befor = document.querySelector ('.image-befor');
+const afterPic = document.querySelector ('.image-after');
 
 separ.addEventListener('mousedown', (grab))
     function grab () {
@@ -27,7 +27,7 @@ separ.onmousedown = function (event) {
             newLeft = rightEdge;
         }
         separ.style.left = newLeft + 'px';
-        afterPic.style.width = newLeft + 'px';
+        afterPic.style.width = newLeft + 18 + 'px';
 
     }
     function onMouseUp() {
