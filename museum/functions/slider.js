@@ -42,36 +42,6 @@ separ.onmousedown = function (event) {
 
 
 
-// separ.addEventListener('mousedown', (grab))
-
-//     function grab () {
-//         separ.style.cursor = 'grabbing';
-//     }
-// separ.addEventListener('mousemove', (releas))
-//     function releas () {
-//         separ.style.cursor = 'grab';
-//     }
-
-// separ.onmousedown = function(event) {
-//     moveAt (event.pageX, event.pageY);
-//     function moveAt (pageX) {
-//         separ.style.left = pageX - 1040 + "px";
-//     }
-//     function onMouseMove (event) {
-//         moveAt (event.pageX);
-//     }
-//     document.addEventListener ('mousemove', onMouseMove);
-        
-//     separ.onmouseup = function (){
-//         document.removeEventListener ('mousemove', onMouseMove);
-//         separ.onmouseup = null;
-//     }
-    
-
-//     separ.ondragstart = function () {
-//         return false;
-//     }
-// }
 
 
 
