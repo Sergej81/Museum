@@ -1,25 +1,25 @@
+'use strict'
 const prev = document.getElementById('btn-prev');
-    next = document.getElementById('btn-next');
-    slides = document.querySelectorAll ('.slide')
-    squares = document.querySelectorAll('.square');
-    numbers = document.querySelectorAll('.number');
-
-let index = 0;
+const next = document.getElementById('btn-next');
+const slides = document.querySelectorAll ('.slide');
+const squares = document.querySelectorAll('.square');
+const numbers = document.querySelectorAll('.number');
+let order = 0;
 
 const activeSlide = n => {
-    for(slide of slides) {
+    for(let slide of slides) {
         slide.classList.remove('active')
     }
     slides[n].classList.add('active')
 }
 const activeSquares = n => {
-    for(square of squares) {
+    for(let square of squares) {
         square.classList.remove('active')
     }
     squares[n].classList.add('active')
 }
 const activeNumber = n => {
-    for(number of numbers) {
+    for(let number of numbers) {
         number.classList.remove('active')
     }
     numbers[n].classList.add('active')
@@ -30,31 +30,31 @@ const prepareCurrentSlide = ind => {
     activeNumber(ind);
 }
 const nextSlide = () => {
-    if (index == slides.length -1) {
-        index = 0;
-        prepareCurrentSlide(index);
+    if (order == slides.length -1) {
+        order = 0;
+        prepareCurrentSlide(order);
     }else {
-        index++;
-        prepareCurrentSlide(index);
+        order++;
+        prepareCurrentSlide(order);
     }
 }
 const prevSlide = () => {
-    if (index == 0) {
-        index = slides.length -1;
-        prepareCurrentSlide(index);
+    if (order == 0) {
+        order = slides.length -1;
+        prepareCurrentSlide(order);
 
     }else {
-        index--;
-        prepareCurrentSlide(index);
+        order--;
+        prepareCurrentSlide(order);
     }
 }    
-squares.forEach ((item, indexSquare) => {
+squares.forEach ((item, orderSquare) => {
     item.addEventListener ('click', ()=> {
-        index = indexSquare;
-        prepareCurrentSlide(index);
+        order = orderSquare;
+        prepareCurrentSlide(order);
     })
 })
 
-
 next.addEventListener ('click',nextSlide);
 prev.addEventListener ('click',prevSlide);
+//setInterval(nextSlide, 2000);
