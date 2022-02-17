@@ -437,11 +437,21 @@ position: relative;
 .click-player{
     position: absolute;
     z-index: 1;
-    background: url(./assets/svg/play-player.svg);
+    background: url(./assets/svg/triangle_play.svg);
     width: 220px;
     height: 220px;
     left: calc(50% - 110px);
     top: calc(50% - 150px);
+}
+.click-player:hover{
+    position: absolute;
+    z-index: 1;
+    background: url(./assets/svg/triangle_hover.svg);
+    width: 220px;
+    height: 220px;
+    left: calc(50% - 110px);
+    top: calc(50% - 150px);
+    transition: 0.7s;
 }
 
 .progress-bar{
